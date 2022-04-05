@@ -1,2 +1,1 @@
-* My First project
-** using HTML CSS JS Reactjs
+* My First project using HTML CSS JS Reactjs
