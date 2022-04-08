@@ -1,0 +1,213 @@
+@import url("https://fonts.googleapis.com/css2?family=Courgette&family=Handlee&family=Lusitana&family=Merienda&family=Playfair+Display&display=swap");
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Handlee", cursive;
+    background-image: linear-gradient(90deg, #00dbde 0%, #fc00ff 100%);
+}
+/* Navbar */
+nav {
+    display: block;
+}
+ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    border-width: 100%;
+    border-radius: 50px;
+    padding: 0px 30px;
+    margin: 10px 0px;
+    background-color: #21d4fd;
+    background-image: linear-gradient(19deg, #21d4fd 0%, #b721ff 100%);
+}
+ul li {
+    list-style-type: none;
+    margin: 10px 20px;
+}
+ul li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 5px;
+}
+ul li a:hover {
+    cursor: pointer;
+    background-color: #0093e9;
+    background-image: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%);
+    border-radius: 10px;
+}
+/* header */
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-image: inherit;
+}
+/* section in header */
+.section {
+    padding: 20px 10px;
+    width: 50%;
+    margin: 50px 10px;
+}
+/* Profile image */
+header img {
+    position: relative;
+    top: 0px;
+    background-color: #85ffbd;
+    background-image: linear-gradient(45deg, #85ffbd 0%, #fffb7d 100%);
+    border-radius: 39% 61% 67% 33% / 30% 32% 68% 70%;
+    display: block;
+    width: 500px;
+    height: 400px;
+    float: left;
+}
+/* content in section */
+header p {
+    font-size: 32px;
+    color: #fff;
+}
+.name {
+    font-size: 42px;
+    text-indent: 80px;
+}
+/* Responsive style */
+@media screen and (max-width: 905px) {
+    .section {
+        padding: 30px 0px;
+        margin: 30px 0px;
+    }
+
+    header img {
+        position: relative;
+        top: 0px;
+        left: 0px;
+        display: block;
+        width: 250px;
+        height: 250px;
+        border-radius: 39% 61% 67% 33% / 30% 32% 68% 70%;
+    }
+    header p {
+        font-size: 24px;
+    }
+
+    ul {
+        padding: 0px 10px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .section {
+        padding: 10px 0px;
+        margin: 10px 0px;
+    }
+    header img {
+        background-color: #00dbde;
+        position: relative;
+        top: 0px;
+        left: 0px;
+        display: block;
+        width: 250px;
+        height: 220px;
+        border-radius: 39% 61% 67% 33% / 30% 32% 68% 70%;
+        float: left;
+    }
+    header p {
+        font-size: 20px;
+        width: 100%;
+    }
+
+    ul {
+        padding: 0px 0px;
+    }
+    ul li {
+        font-size: 14px;
+        margin: 10px 10px;
+    }
+}
+/* Eduction Details  */
+.section2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-image: inherit;
+}
+.section2 h1 {
+    font-size: 28px;
+    letter-spacing: 2px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.container {
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.container .box {
+    position: relative;
+    cursor: pointer;
+    padding: 10px;
+}
+.container .box .face {
+    width: 300px;
+    height: 300px;
+    transition: 0.5s;
+}
+/* front side  */
+.container .box .face.front {
+    position: relative;
+    background: #4e54c8;
+    background: linear-gradient(to right, #8f94fb, #4e54c8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    box-shadow: 0 0px 20px rgba(0, 0, 0, 0.8);
+    transform: translateY(100px);
+}
+.container .box:hover .face.front {
+    background: #4e54c8;
+    background: linear-gradient(to right, #8f94fb, #4e54c8);
+    transform: translateY(0);
+}
+.container .box .face.front .content {
+    opacity: 1;
+    transition: 0.5s;
+}
+
+.container .box .face.front .content img {
+    width: 150px;
+    height: 100px;
+}
+.container .box .face.front .content h3 {
+    margin: 10px 0;
+    padding: 0;
+    color: #000;
+    text-align: center;
+    font-size: 1.5em;
+}
+/* behind part */
+.container .box .face.behind {
+    position: relative;
+    background: #4e54c8;
+    background: linear-gradient(to right, #8f94fb, #4e54c8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 0px 50px rgba(0, 0, 0, 0.8);
+    transform: translateY(-200px);
+}
+.container .box:hover .face.behind {
+    transform: translateY(0);
+}
+.container .box .face.behind .content p {
+    margin: 0;
+    padding: 0;
+}
